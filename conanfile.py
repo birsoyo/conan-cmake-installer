@@ -4,15 +4,9 @@ from conans import __version__ as conan_version
 from conans.model.version import Version
 from conans.errors import ConanException, NotFoundException
 
-available_versions = ["3.11.3", "3.11.2", "3.11.1", "3.10.0", "3.9.0", "3.8.2",
-                      "3.8.1", "3.8.0", "3.7.2", "3.7.1",
-                      "3.7.0", "3.6.3", "3.6.2", "3.6.1",
-                      "3.6.0", "3.5.2", "3.4.3", "3.3.2",
-                      "3.2.3", "3.1.3", "3.0.2", "2.8.12"]
-
-
 class CMakeInstallerConan(ConanFile):
     name = "cmake_installer"
+    version = "3.12.1"
     description = "creates cmake binaries package"
     license = "OSI-approved BSD 3-clause"
     url = "http://github.com/lasote/conan-cmake-installer"
@@ -21,8 +15,6 @@ class CMakeInstallerConan(ConanFile):
                     "arch": ["x86", "x86_64"]}
     else:
         settings = "os_build", "arch_build"
-    options = {"version": available_versions}
-    default_options = "version=" + [v for v in available_versions if "-" not in v][0]
     build_policy = "missing"
 
     def minor_version(self):

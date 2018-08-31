@@ -1,5 +1,6 @@
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/lasote/conan-cmake-installer)](https://ci.appveyor.com/project/lasote/conan-cmake-installer)
+[![Build status](https://ci.appveyor.com/api/projects/status/brj2oru4brdix7g1?svg=true)](https://ci.appveyor.com/project/birsoyo/conan-cmake-installer-qpgdx)
 
+ [ ![Download](https://api.bintray.com/packages/orhun/sesame/cmake_installer%3Asesame/images/download.svg) ](https://bintray.com/orhun/sesame/cmake_installer%3Asesame/_latestVersion)
 
 # conan-cmake-installer
 
@@ -18,7 +19,6 @@ The available versions are:
   This package is useful as a conan **build_require**, you can use it to build other packages using the CMake packages.
   This package will automatically configure your PATH, to point to the packaged CMake.
   Check: [http://docs.conan.io/en/latest/mastering/build_requires.html](http://docs.conan.io/en/latest/mastering/build_requires.html)
-  
-  
 
-  
+
+
